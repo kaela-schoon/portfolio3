@@ -1,0 +1,555 @@
+/* Kaela Schoon - Portfolio */
+:root {
+    --dark: #182c61;
+    --text: #2c3a47;
+    --accent1: #ffc312;
+    --accent2: #706fd3;
+    --accent2dark: #3b3b98;
+    --white: #fff;
+    --whitegrey: #f5f7fb;
+    --textgrey: #858999;
+    --whitegrey2: #EBECF2;
+        }
+    
+body {
+    margin: 0 auto;
+    animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+	0% { 
+		opacity: 0; 
+	} 
+	100% { 
+		opacity: 1; 
+	} 
+} 
+
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 54px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color:  var(--text);
+    opacity: 1;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 24px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color:  var(--text);
+    opacity: 1;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color:  var(--text);
+    opacity: 1;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font: normal normal normal 20px/30px Poppins;
+    letter-spacing: 0px;
+    color:  var(--text);
+    opacity: 1;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font: normal normal bold 12px/19.2px Poppins;
+    letter-spacing: 0px;
+    color: var(--textgrey);
+    opacity: 1;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font: normal normal normal 18px/27px Poppins;
+    letter-spacing: 0px;
+    color:  var(--text);
+    opacity: 1;
+}
+
+a {
+    font-weight:800;
+    color: var(--accent2);
+    text-decoration:none;
+}
+
+a:hover {
+    color: var(--accent1);
+}
+
+button {
+    background-color:  var(--accent1);
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    color: var(--text);
+    text-align: left;
+    font: normal normal 600 12px/19px Poppins;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 1;
+    text-decoration:none;
+    border:none;
+    transition: padding .5s ease-in-out;
+    transition: color .5s ease-out;
+    transition: background-color .5s ease-out;
+    transition: padding .5s ease-in-out;
+}
+button:hover {
+    background-color: var(--accent2);
+    color:  var(--white);
+    text-decoration:none;
+    transition: color .5s ease-out;
+    transition: background-color .5s ease-out;
+    transition: padding .5s ease-in-out;
+    border-radius: 5px;
+}
+button a {
+    background-color:  var(--accent1);
+    color: var(--grey);
+    text-decoration:none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    transition: color .5s ease-out;
+    transition: background-color .5s ease-out;
+    transition: padding .5s ease-in-out;
+}
+button a:hover{
+    background-color: var(--accent2);
+    color: var(--white);
+    text-decoration:none;
+    padding: 10px 30px 10px 30px;
+    transition: color .5s ease-out;
+    transition: background-color .5s ease-out;
+    transition: padding .5s ease-in-out;
+    border-radius: 5px;
+}
+ul {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font: normal normal normal 18px/27px Poppins;
+    letter-spacing: 0px;
+    color:  var(--text);
+    opacity: 1;
+}
+
+ul li::before {
+content: "\2022";
+color:  var(--accent1); 
+font-weight: bold;
+font-size:20px;
+display: inline-block;
+width: 1em;
+margin-left: -1em;
+}
+
+section {
+    display:block;
+    width:100%;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+}
+.NavHome {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left:0;
+    top:0;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(2px);
+    text-align: center;
+    z-index: 1;
+}
+.logo, .logo a{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    flex-grow: 1;
+    font-family: 'Poppins', sans-serif;
+    font: normal normal bold 25px Poppins;
+    color:var(--white);
+    text-decoration:none;
+    padding: 0px 0px 0px 32px;
+}
+.logo a:hover {
+    color:  var(--accent1);
+    text-decoration:none;
+    transition: color .5s ease-out;
+}
+.NavLinks {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    padding: 0px 0px 0px 64px;
+}
+
+.NavLink {
+    text-align: center;
+    font: normal normal 700 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: var(--white);
+    opacity: 1;
+    text-decoration: none;
+}
+.NavLink:hover {
+    color:  var(--accent1);
+    transition: color .5s ease-out;
+    text-decoration: none;
+}
+.NavSocial {
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding: 0px 32px 0px 0px;
+}
+.socialLinks {
+    width: 20px;
+    height: 20px;
+    padding:0px;
+    margin:10px;
+}
+
+
+
+/*HEADER*/
+#homeHeader {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-image: url(images/KS_HomeHero.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat, repeat;
+    background-color:  var(--dark);
+    background-size: cover;
+    text-align: center;
+    padding: 130px 0px 120px 0px;
+    color:var(--white);
+    z-index: 0;
+}
+
+#homeHeader p,#homeHeader h4,#homeHeader h1 {
+    color:var(--white);
+    justify-content:center;
+}
+
+#homeHeader h4 {
+    margin-top: -25px;
+}
+
+
+
+
+/*HOME ROLES*/
+#homeRoles {
+    display:flex;
+    background-color:var(--whitegrey);
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:center;
+    padding-top:4%;
+    padding-bottom:4%;
+
+}
+.RolesCard {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--white);
+    max-width:550px;
+    margin:10px;
+    padding: 0px;
+    line-height: 0;
+    box-shadow: 0px 5px 20px  #0B074210;
+    border-radius: 10px;
+    opacity: 1;
+    transition: .2s ease-in-out;
+    
+}
+.RolesCard:hover{
+    box-shadow: 0px 5px 20px  #0B074230;
+    transition: .2s ease-in-out;
+}
+
+.RolesCardDesc {
+    text-align:center;
+    padding: 50px 13% 0px 13%;
+}
+
+.RoleLink {
+    float: right;
+    text-align:center;
+    background-color:  var(--accent2);
+    border-radius: 10px 0px;
+    opacity: 1;
+    width: 40px;
+    padding:8px;
+}
+.RolesCard:hover .RoleLink{
+    background-color:  var(--accent1);
+}
+
+
+
+/*CTA*/
+.ctaContainer {
+    display: flex;
+    align-items:center;
+    background-color: var(--accent2dark);
+    max-width:1120px;
+    margin:10px;
+    color: var(--white);
+    border-radius: 10px;
+    opacity: 1;
+    padding: 50px 6% 50px 6%;
+    justify-content: space-between;
+    z-index:200;
+}
+.ctaCopy, .ctaCopy H2 {
+    color:var(--white);
+    line-height: 60px;
+
+}
+
+.ctaButton {
+    padding-left:50px;
+}
+
+
+
+
+/*BODY CONTAINER*/
+#bodyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--white);
+    padding-bottom: 6%;
+    padding-top: 4%;
+        z-index: 0;
+}
+
+.projectContainer {
+    align-items: center;
+    width:100%;
+    max-width:1120px;
+}
+
+.projectCard {
+    display:flex;
+    background-color: var(--whitegrey);
+    border-radius: 10px;
+    opacity: 1;
+    transition: .2s ease-in-out;
+    margin: 0% 10px 4% 10px; 
+    z-index:200;
+}
+
+.projectCardImage {
+    width:460px;
+    background-color: var(--dark);
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+  }
+
+
+.projectCardCopy {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width:660px;
+    padding:75px 6% 75px 6%;
+  }
+  .projectCardCopy p{
+      margin-top:-10px;
+  }
+
+  .featuredProject {
+    background: var(--whitegrey2);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    font: normal normal 600 12px/19.2px Poppins;
+    letter-spacing: 0px;
+    color: var(--textgrey);
+    opacity: 1;
+}
+
+.projectCardCopy button {
+    margin-top: 40px;
+}
+
+
+
+
+
+/*FOOTER*/
+
+.yellowBorder {
+    background-color:  var(--accent2);
+    height:15px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color:  var(--dark);
+    position: absolute;
+    width: 100% ;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.footerLinks {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 5px 0px 0px 0px;
+    width:550px;
+}
+
+.footerLink {
+    text-align: center;
+    font: normal normal 200 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: var(--white);
+    opacity: 1;
+    text-decoration: none;
+    padding: 0px 25px 0px 25px;
+}
+.footerLink:hover {
+    color:  var(--accent1);
+    transition: color .5s ease-out;
+    text-decoration: none;
+}
+.footerSocial {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    width:550px;
+}
+#footer h2{
+    font-size: 40px;
+    line-height:0px;
+    color:var(--white);
+    width:550px;
+}
+#footer h2:hover{
+    color: var(--accent2);
+    transition: .2s ease-in-out;
+}
+
+.copyright {
+    font-family: 'Poppins', sans-serif;
+    font: normal normal normal 12px Poppins;
+    letter-spacing: 0px;
+    color: var(--whitegrey);
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 768px), screen and (min-device-width: 375px) 
+and (max-device-width: 812px),  screen and (min-device-width: 414px) 
+and (max-device-width: 736px), screen and (device-width: 360px) 
+and (device-height: 640px) {
+/* NAVIGATION */
+.NavHome {
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(2px);
+
+}
+.NavLinks {
+    justify-content: flex-end;
+    padding: 0px 6% 0px 0px;
+}
+.NavLink {
+padding: 0px 0px 0px 20px;
+font-size: 12px;
+}
+.NavSocial {
+    display:none;
+}
+
+/*HEADER*/
+#homeHeader {
+    padding: 15% 0px 10% 0px;
+}
+
+#homeHeader h1 {
+    font-size: 55px;
+}
+
+#homeRoles {
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding-top:4%;
+    padding-bottom:4%;
+    padding-left:0%;
+    padding-right:0%;
+    margin:0;
+
+}
+.RolesCard {    margin:10px 6% 10px 6%;    max-width:800px;}
+
+.RolesCard:hover{    box-shadow: 0px 5px 20px  var(--grey)14;    transition: .2s ease-in-out;}
+
+.projectContainer {    width:auto;    padding-top:3%;    Padding-left:6%;    padding-right:6%;}
+
+.projectCard {    flex-direction: column;    width:auto;}
+
+.projectCardImage {    height: 300px;    width:100%;   border-radius: 10px 10px 0px 0px;  }
+  
+.project1, .project2 {    background-size: 100% auto;}
+
+.projectCardCopy {    display:flex;    width:auto;    padding:30px 6% 40px 6%;  }
+
+.ctaContainer {
+    padding: 20px 6% 20px 6%;
+    justify-content: space-between;
+    z-index:200;
+}
+
+.ctaButton button a:hover{
+    padding: 10px 20px 10px 20px;
+}
+
+.logo, .logo a{
+    padding: 0px 0px 0px 6%;
+    align-items:center;
+}
+}
