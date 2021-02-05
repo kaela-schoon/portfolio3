@@ -466,27 +466,28 @@ border: 10px solid  var(--accent1);
     background-image: url(../images/02_UXUI/BP.png);
 }
 .img2 {
-    background-image: url();
+    background-image: url(../images/02_UXUI/Bhive.png);
 }
 .img3 {
-    background-image: url();
+    background-image: url(../images);
 }
 .img4 {
-    background-image: url();
+    background-image: url(../images/02_UXUI/hivelife.png);
 }
 .img5 {
     background-image: url();
 }
 .img1, .img2, .img3, .img4, .img5 {
     background-color:var(--dark); 
-    background-size: 100% auto;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     transition: .4s ease-in-out;
+
 }
 
 .img1:hover,.img2:hover,.img3:hover,.img4:hover,.img5:hover {
-        background-size: 120% auto;
+        background-size: 110%;
         transition: .4s ease-in-out;
 
 }
